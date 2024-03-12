@@ -1,0 +1,166 @@
+body{
+    margin: 0!important;
+    padding: 0!important;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(202, 202, 202);
+}
+main{
+    margin: 0!important;
+
+}
+html{
+    margin: 0;
+
+}
+
+.welcomeSection {
+    border-radius:10px;
+    justify-content: center;
+    width: 100%;
+    position: relative; /* Permet de positionner le contenu par rapport à cette section */
+  }
+  
+  .imageContainer {
+    border-radius:10px;
+    position: relative;
+    width: 100%;
+    height: 350px; /* Hauteur de votre image */
+    background-image: url('/assets/images/hero.png'); /* Chemin vers votre image */
+    background-size:cover ;
+    background-position: center;
+  }
+  .imageContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur semi-transparente */
+  }
+  
+  .contentOverlay {
+    width: 72%;
+    position: absolute;
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Décalage de 50% de la largeur et de la hauteur de l'élément */
+    text-align: center;
+    color: white; /* Couleur du texte */
+    padding: 20px;
+  }
+  
+  .welcomeTitle {
+    color:#8DE464;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcomeText {
+    color:#EBD26F;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .joinUsSection {
+    display: flex;
+    width: 100%;
+    background-color: #8DE464; /* Vert */
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .joinUsSection div {
+    border-radius: 10px;
+    padding: 20px;
+    color: #EBD26F;
+    font-weight: bold;
+    text-align: center;
+    background-color: #413c3e; /* Couleur marron conservée */
+    width: 40%;
+    cursor: pointer; /* Ajout d'un curseur pointer pour indiquer que le bouton est cliquable */
+    transition: background-color 0.3s ease; /* Animation de transition pour une meilleure expérience utilisateur */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre ajoutée */
+}
+.joinUsSection div a{
+    text-decoration: none;
+    color:#EBD26F;
+}
+.joinUsSection div:hover {
+    background-color: #362f30; /* Assombrissement de la couleur au survol pour une interaction visuelle */
+    transform: scale(1.2);
+}
+
+  .section {
+    background-color:#413c3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    
+    background-color: #f8f9fa;
+    padding-bottom: 20px;
+  }
+  .sectionWhite{
+    background-color:#413c3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 5%;
+    padding-bottom: 20px;
+
+  }
+  .sectionWhite h2{
+    width: 95%;
+    color: #8DE464;
+    padding-bottom: 10px;
+    border-bottom: #8DE464 2px solid;
+    
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .sectionWhite p {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+  }
+  .section h2 {
+    width: 90%;
+    color: #EBD26F;
+    padding-bottom: 10px;
+    border-bottom: #EBD26F 2px solid;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  .section p {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+  }
+  .content{
+    display: flex;
+    align-items:center;
+    
+  }
+  .content p{
+    width: 100%;
+  }
+  .imageSection{
+    width: 50%;
+  }
+  .imageSection img{
+    width: 100%;
+    border-radius:5px;
+  }
